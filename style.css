@@ -1,0 +1,163 @@
+.road{
+    background-image: url('./img/360_F_300101671_g05kRIreJ3N9RVmMwZIRJmh8BAFLyTxU-1.jpg');
+    width: 820px;
+    height: 480px;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.car{
+    position: absolute;
+    background-image: url('./img/—Pngtree—yellow\ car\ cartoon\ car\ classic_3899207.png');
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    background-position: center;
+    background-size: cover;
+    bottom: 0px;
+    animation: mymove 10s infinite;
+    animation-timing-function: linear;
+    left: 0;
+}
+@keyframes mymove {
+    7%{bottom: 0;}
+    10%{bottom: 45px;}
+    14%{bottom: 45px;}
+    22%{bottom: 0;}
+    23%{left: 300px;}
+    60%{left: 530px;}
+    62%{bottom: 0; transform: rotateY(0deg);}
+    63%{left: 700px; bottom: 45px; transform: rotateY(180deg);}
+    100%{left: 0; bottom: 45px; transform: rotateY(180deg);}
+}
+.second{
+    animation-delay: 1s;
+}
+.third{
+    animation-delay: 4.8s;
+    background-image: url('./img/car-clipart-md.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    transform: scaleX(1);
+}
+.sign{
+    background-image: url('/img/road-sign.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    position: absolute;
+    bottom: 120px;
+    left: 330px;
+}
+/* .deer{
+    background-image: url(./img/exnik.webp);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    bottom: 120px;
+    left: 420px;
+    animation: deermove 1s infinite;
+    animation-timing-function: linear;
+    animation-delay: 7.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes deermove {
+    0%{opacity: 1; }
+    5%{left: 400px;}
+    27%{left: 420px;}
+    30%{left: 400px;}
+    97%{opacity: 1; left: 350px;}
+    100%{bottom: 0px; opacity: 0; left: 350px;}
+} */
+.meeting{
+    background-image: url('./img/3.png');
+    transform: scaleX(-1);
+    height: 100px;
+    width: 125px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: meetingmove 5s infinite;
+    animation-timing-function: linear;
+    left: 400px;
+    bottom: 10px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes meetingmove {
+    0%{left: 400px;}
+    10%{opacity: 1;}
+    65%{opacity: 1;}
+    80%{opacity: 0;}
+    100%{left: 700px; opacity: 0;}
+}
+.tractor{
+    background-image: url('./img/tractor.png');
+    transform: scaleX(-1);
+    height: 100px;
+    width: 125px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: tractormove 4s 2;
+    bottom: 65px;
+    animation-fill-mode: forwards;
+}
+@keyframes tractormove {
+    0%{right: 0px}
+    79%{right: 300px;}
+    90%{opacity: 1;}
+    100%{right: 700px; opacity: 0;}
+}
+.runing{
+    background-image: url('./img/runing.gif');
+    transform: scaleX(-1);
+    height: 85px;
+    width: 65px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: runingmove 15s infinite;
+    bottom: 150px;
+}
+@keyframes runingmove {
+    0%{right: 0px}
+    50%{opacity: 1;}
+    55%{opacity: 1;}
+    98%{right: 750px; bottom: 200px;}
+    100%{right: 750px; bottom: 210px; opacity: 1;} 
+}
+.wolf{
+    background-image: url('./img/Wolf.gif');
+    transform: scaleX(-1);
+    height: 70px;
+    width: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    animation: runingmove 15s infinite;
+    bottom: 150px;
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+/* @keyframes wolfmovig {
+    0%{right: 0px}
+    15%{bottom: 210px;}
+    50%{opacity: 1;}
+    100%{right: 750px; bottom: 250px; opacity: 0}
+} */
+.rain{
+    background-image: url('./img/rain.gif');
+    height: 430px;
+    width: 820px;
+    animation: rainmove 10s infinite;
+}
+@keyframes rainmove{
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    50%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
